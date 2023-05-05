@@ -1,0 +1,10 @@
+- SELECT firstName,lastName from employees;
+- SELECT * FROM employees ORDER BY firstName;
+- SELECT * FROM employees ORDER BY employeeNumber DESC;
+- SELECT DISTINCT officeCode FROM employees ORDER BY firstName DESC;
+- SELECT * FROM employees ORDER BY firstName LIMIT 5;
+- SELECT * FROM payments WHERE YEAR (paymentDate) = 1999 ORDER BY customerNumber DESC;
+- SELECT employeeNumber,firstName,lastName FROM employees WHERE lastName LIKE '%an%';
+- SELECT employeeNumber,firstName,lastName FROM employees WHERE firstName LIKE 'S%' AND firstName NOT LIKE 'Sh%' ORDER BY firstName;
+- SELECT AVG(amount) FROM payments;
+- SELECT customerName,phone,paymentDate,amount FROM customers c INNER JOIN payments p ON p.customerNumber = c.customerNumber;
